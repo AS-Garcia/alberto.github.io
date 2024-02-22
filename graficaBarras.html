@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica de Barras</title>
+    <link rel="stylesheet" href="mi.css">
+    <!-- Asegúrate de incluir los archivos CSS de UIKit y Apache ECharts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div id="logo">Logo</div>
+        <h1>Título del Proyecto</h1>
+        <button id="menu-hamburguesa" uk-toggle="target: #offcanvas-nav">Menú</button>
+    </header>
+
+    <!-- Offcanvas de UIKit -->
+    <div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <nav>
+                <ul>
+                    <li><a href="cards.html">Listado de Tarjetas</a></li>
+                    <li><a href="graficaBarras.html">Gráfica de Barras</a></li>
+                    <li><a href="graficaCircular.html">Gráfica Circular</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Contenedor para la gráfica de barras -->
+    <div id="bar-chart" style="width: 800px; height: 600px; margin: auto;"></div>
+
+    <!-- Script para Apache ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+    <!-- Script para la lógica de la gráfica de barras -->
+    <script src="graficaBarras.js"></script>
+</body>
+</html>
